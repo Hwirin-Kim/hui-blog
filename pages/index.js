@@ -1,23 +1,18 @@
 import PostCard from "@/components/postCard/PostCard";
+import PostList from "@/components/postList/PostList";
+import { getAllPosts } from "@/lib/api";
 import Head from "next/head";
-import Link from "next/link";
 
-import { getAllPosts } from "../lib/api";
 import styles from "../styles/Home.module.css";
 const Home = ({ posts }) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Blog Starter Kit</title>
-        <meta name="description" content="Blog Starter Kit" />
+        <title>Hui-blog</title>
+        <meta name="description" content="Hui-blog" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className={styles.main}>
-        {posts.map((post, index) => (
-          <PostCard postInfo={post} key={`${post.slug}_${index}`} />
-        ))}
-      </main>
+      <PostList posts={posts} />
     </div>
   );
 };

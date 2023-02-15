@@ -1,0 +1,21 @@
+.container {
+  margin-top: 20px;
+  padding: 0 20px 0 0;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 600px));
+  gap: 20px;
+}
+
+@media (max-width: 1180px) {
+  .wrap {
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0px;
+    justify-content: flex-start;
+  }
+}
