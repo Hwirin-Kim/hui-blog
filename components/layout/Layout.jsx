@@ -15,8 +15,8 @@ const Layout = ({ children }) => {
     router.push(`/${page}`);
   };
   return (
-    <layout className={classes.layout}>
-      <nav className={classes.nav}>
+    <div className={classes.layout}>
+      <div className={classes.nav}>
         <Image className={classes.profile} src={img} alt="profile_picture" />
         <div className={classes.home} onClick={() => onClickToPage("")}>
           김휘린의 블로그
@@ -44,9 +44,9 @@ const Layout = ({ children }) => {
           Posts
         </div>
         <div className={classes.category}>About</div>
-      </nav>
+      </div>
       <div className={classes.contents}>{children}</div>
-    </layout>
+    </div>
   );
 };
 export default Layout;
