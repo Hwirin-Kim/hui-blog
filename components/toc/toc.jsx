@@ -20,11 +20,35 @@ const Toc = () => {
 
   return (
     <div className={classes.container}>
-      {headingEls.map((element, index) => (
-        <div key={`${element + index}`}>
-          <a href={`#${element.id}`}>{element.textContent}</a>
-        </div>
-      ))}
+      <span>목차</span>
+      {headingEls.map((element, index) => {
+        console.log(element.tagName);
+        if (element.tagName === "H1") {
+          return (
+            <div key={`${element + index}`}>
+              <a href={`#${element.id}`} className={classes.h1}>
+                {element.textContent}
+              </a>
+            </div>
+          );
+        } else if (element.tagName === "H2") {
+          return (
+            <div key={`${element + index}`}>
+              <a href={`#${element.id}`} className={classes.h2}>
+                {element.textContent}
+              </a>
+            </div>
+          );
+        } else if (element.tagName === "H3") {
+          return (
+            <div key={`${element + index}`}>
+              <a href={`#${element.id}`} className={classes.h3}>
+                {element.textContent}
+              </a>
+            </div>
+          );
+        }
+      })}
     </div>
   );
 };
