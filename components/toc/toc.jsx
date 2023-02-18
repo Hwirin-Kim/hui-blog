@@ -1,54 +1,32 @@
-import { getIntersectionObserver } from "@/lib/observer";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-
+import classes from "./Toc.module.scss";
 const Toc = () => {
   const router = useRouter();
-  const [currentId, setCurrentId] = useState("");
   const [headingEls, setHeadingEls] = useState([]);
 
   useEffect(() => {
-    const observer = getIntersectionObserver(setCurrentId);
-    const headingElements = Array.from(document.querySelectorAll("h2, h3"));
+    //해당 파일의 h1,h2,h3의 엘리먼츠를 선택하여 배열로 만듬
+    const headingElements = Array.from(document.querySelectorAll("h1, h2, h3"));
+
+    //headingEls에 쿼리셀렉터로 가져온 배열을 넣음 넣음
     setHeadingEls(headingElements);
-    headingElements.map((header) => {
-      observer.observe(header);
+
+    //헤딩 엘리먼츠로 가져온
+    headingElements.forEach((header, index) => {
+      header.id = `${header.tagName.toLowerCase()}_${index}`;
     });
   }, [router]);
-  console.log("헤딩엘스", headingEls);
 
   return (
-    <>
-      <div>
-        <div>
-          {headingEls.map((h, i) =>
-            h.nodeName === "H2" ? (
-              <div
-                data-depth="1"
-                key={i}
-                data-active={currentId === h.id ? true : false}
-              >
-                <a href={`#${h.id}`}>{h.textContent}</a>
-              </div>
-            ) : (
-              <div
-                data-depth="2"
-                key={i}
-                data-active={currentId === h.id ? true : false}
-              >
-                <a href={`#${h.id}`}>{h.textContent}</a>
-              </div>
-            )
-          )}
+    <div className={classes.container}>
+      {headingEls.map((element, index) => (
+        <div key={`${element + index}`}>
+          <a href={`#${element.id}`}>{element.textContent}</a>
         </div>
-      </div>
-    </>
+      ))}
+    </div>
   );
-};
-
-const originPath = (asPath) => {
-  asPath.split("#");
-  return asPath[0];
 };
 
 export default Toc;

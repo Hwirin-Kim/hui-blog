@@ -1,6 +1,7 @@
 .container {
   max-width: 1050px;
   width: 100%;
+  height: fit-content;
   box-sizing: border-box;
   margin: 20px 20px 0 20px;
 }
@@ -20,16 +21,19 @@
 }
 .content_wrap {
   width: 100%;
-  height: fit-content;
-
+  height: auto;
   display: flex;
-  background-color: transparent;
+  column-gap: 0;
+  flex-direction: row;
 }
-.index {
-  width: 200px;
-  height: 100px;
-  position: sticky;
-  top: 0;
-  left: 100%;
-  background-color: antiquewhite;
+.content {
+  width: 100%;
+  background-color: white;
+  color: black;
+  h1 {
+    color: yellow;
+  }
+  p {
+    font-size: 1.2rem;
+  }
 }

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PostCard from "../postCard/PostCard";
 import classes from "./PostList.module.scss";
+
 const PostList = ({ posts }) => {
   const [category, setCategory] = useState("All Category");
   const onSelectChange = (event) => {
