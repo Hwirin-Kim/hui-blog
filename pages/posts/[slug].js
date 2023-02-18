@@ -1,6 +1,7 @@
-import { getAllPosts, getPostBySlug } from "../../lib/api";
+import { getAllPosts, getLinkContent, getPostBySlug } from "../../lib/api";
 import markdownToHtml from "../../lib/markdownToHtml";
 import Post from "@/components/post/Post";
+import { useEffect, useLayoutEffect, useState } from "react";
 const Slug = ({ post }) => {
   return <Post post={post} />;
 };
@@ -12,10 +13,10 @@ export async function getStaticProps(props) {
     "slug",
     "description",
     "date",
-    "lastmod",
-    "weight",
+    "category",
+    "published",
     "content",
-    "fileName",
+    "tags",
   ]);
 
   const content = await markdownToHtml(post.content || "");

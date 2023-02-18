@@ -1,0 +1,46 @@
+.container {
+  width: 300px;
+  display: inline-block;
+  height: 1px;
+  max-height: auto;
+  position: sticky;
+  top: 0;
+  line-height: 1.8rem;
+  span {
+    font-size: 1.5rem;
+  }
+
+  .h1 {
+    font-size: 1rem;
+    display: block;
+  }
+  .h1:hover {
+    font-weight: bold;
+  }
+
+  .h2 {
+    font-size: 1rem;
+    text-indent: 20px;
+    display: block;
+  }
+
+  .h2:hover {
+    font-weight: bold;
+  }
+
+  .h3 {
+    font-size: 1rem;
+    display: block;
+    text-indent: 40px;
+  }
+
+  .h3:hover {
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 1180px) {
+  .container {
+    display: none;
+  }
+}

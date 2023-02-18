@@ -1,0 +1,56 @@
+.container {
+  max-width: 1050px;
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
+  margin: 20px 20px 0 20px;
+}
+.title {
+  font-size: 3rem;
+}
+.description {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+.date {
+  font-size: 1rem;
+}
+.line {
+  border-top: 1px solid white;
+  margin: 30px 0;
+}
+.content_wrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  column-gap: 0;
+  flex-direction: row;
+}
+.content {
+  width: 100%;
+
+  h1 {
+    color: yellow;
+    margin: 20px 0;
+  }
+  h2 {
+    margin: 30px 0;
+  }
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  ul {
+    list-style-position: inside;
+  }
+  li {
+    text-indent: 15px;
+    p {
+      display: inline;
+    }
+  }
+  img {
+    max-width: 70%;
+    max-height: 500px;
+  }
+}

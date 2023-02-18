@@ -19,7 +19,7 @@ const Home = ({ posts }) => {
 
 export async function getStaticProps() {
   // data fetching
-  const posts = getAllPosts(["slug", "title", "date", "description"]);
+  const posts = getAllPosts(["slug", "title", "date", "description", "tags"]);
   // const posts = [
   //   { title: '테스트', author: 'ctdlog' },
   //   { title: '저는 바보입니다', author: '바보' },
