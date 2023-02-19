@@ -22,7 +22,6 @@ const Toc = () => {
     <div className={classes.container}>
       <span>목차</span>
       {headingEls.map((element, index) => {
-        console.log(element.tagName);
         if (element.tagName === "H1") {
           return (
             <div key={`${element + index}`}>
