@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import PostCard from "../postCard/PostCard";
+import PostCard from "../postCard/PostCard.jsx";
 import classes from "./PostList.module.scss";
 
 const PostList = ({ posts }) => {

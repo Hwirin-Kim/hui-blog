@@ -1,5 +1,3 @@
-import { onClickToPage } from "@/lib/api";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import classes from "./PostCard.module.scss";
 const PostCard = ({ postInfo }) => {

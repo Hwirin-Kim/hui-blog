@@ -1,4 +1,4 @@
-import PostList from "@/components/postList/PostList";
+import PostList from "@/components/postList/PostList.jsx";
 import { getAllPosts } from "@/lib/api";
 import Head from "next/head";
 

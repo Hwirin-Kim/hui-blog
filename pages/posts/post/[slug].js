@@ -1,6 +1,6 @@
 import { getAllPosts, getLinkContent, getPostBySlug } from "../../../lib/api";
 import markdownToHtml from "../../../lib/markdownToHtml";
-import Post from "@/components/post/Post";
+import Post from "@/components/post/Post.jsx";
 
 const Slug = ({ post }) => {
   return <Post post={post} />;

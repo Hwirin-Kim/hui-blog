@@ -1,4 +1,4 @@
-import Toc from "../toc/Toc";
+import Toc from "../toc/Toc.jsx";
 import classes from "./Post.module.scss";
 import Head from "next/head";
 import { useEffect } from "react";
