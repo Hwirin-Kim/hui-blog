@@ -16,7 +16,7 @@ const Toc = () => {
     headingElements.forEach((header, index) => {
       header.id = `${header.tagName.toLowerCase()}_${index}`;
     });
-  }, [router]);
+  }, [router.pathname]);
 
   return (
     <div className={classes.container}>
