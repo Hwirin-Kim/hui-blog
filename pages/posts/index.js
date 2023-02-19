@@ -3,10 +3,10 @@ import PostList from "@/components/postList/PostList";
 import { getAllPosts } from "@/lib/api";
 import Head from "next/head";
 
-import styles from "../../styles/Home.module.css";
 const Home = ({ posts }) => {
+  console.log(posts);
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Hui-blog</title>
         <meta name="description" content="Hui-blog" />
@@ -19,13 +19,15 @@ const Home = ({ posts }) => {
 
 export async function getStaticProps() {
   // data fetching
-  const posts = getAllPosts(["slug", "title", "date", "description", "tags"]);
-  // const posts = [
-  //   { title: '테스트', author: 'ctdlog' },
-  //   { title: '저는 바보입니다', author: '바보' },
-  //   { title: '코딩 잘하는법', author: '저도 몰라요' },
-  // ];
-
+  const posts = getAllPosts([
+    "slug",
+    "title",
+    "date",
+    "description",
+    "tags",
+    "category",
+  ]);
+  console.log("포스츠에요", posts);
   return {
     props: {
       posts,

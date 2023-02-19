@@ -1,7 +1,7 @@
-import { getAllPosts, getLinkContent, getPostBySlug } from "../../lib/api";
-import markdownToHtml from "../../lib/markdownToHtml";
+import { getAllPosts, getLinkContent, getPostBySlug } from "../../../lib/api";
+import markdownToHtml from "../../../lib/markdownToHtml";
 import Post from "@/components/post/Post";
-import { useEffect, useLayoutEffect, useState } from "react";
+
 const Slug = ({ post }) => {
   return <Post post={post} />;
 };

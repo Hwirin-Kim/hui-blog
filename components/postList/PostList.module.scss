@@ -1,6 +1,14 @@
 .container {
   margin-top: 20px;
   padding: 0 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.category {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .wrap {
@@ -14,15 +22,17 @@
   font-size: 1rem;
   border-radius: 8px;
   margin-bottom: 30px;
+
+  background-color: var(--text-color);
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 600px) {
   .wrap {
     display: flex;
     max-width: 600px;
     width: 100%;
-    flex-wrap: wrap;
-    margin: 0px;
+    flex-direction: column;
+    // flex-wrap: wrap;
     justify-content: flex-start;
   }
 }
