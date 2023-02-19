@@ -1,16 +1,24 @@
-@media (max-width: 600px) {
+@media (max-width: 1180px) {
   .nav {
     width: 100%;
     height: 3rem;
-    background-color: white;
+    background-color: var(--text-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
+    padding: 0 5px;
     .home {
-      color: black;
+      font-size: 1.5rem;
+      color: var(--background-color);
     }
-    .hamburger {
-      color: black;
+    .top_menu {
+      display: flex;
+      color: var(--background-color);
+      div {
+        font-size: 1.5rem;
+        margin-left: 10px;
+      }
     }
     .profile {
       display: none;
@@ -30,7 +38,7 @@
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1180px) {
   .layout {
     display: flex;
     height: 100vh;
@@ -38,7 +46,7 @@
   .nav {
     width: 18rem;
     height: calc(var(--vh, 1vh) * 100 - 40px);
-    background-color: white;
+    background-color: var(--text-color);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -47,13 +55,13 @@
     box-sizing: border-box;
     align-items: center;
     padding: 0 10px;
-
+    color: var(--text-color);
     .home {
-      color: black;
+      color: var(--background-color);
       font-size: 30px;
       margin: 20px 0;
     }
-    .hamburger {
+    .top_menu {
       display: none;
     }
     .profile {
@@ -64,16 +72,17 @@
       margin: 20px 0;
     }
     .icons {
-      color: black;
+      color: var(--background-color);
       font-size: 2rem;
       width: 150px;
       display: flex;
       justify-content: space-between;
     }
     .category {
-      color: black;
+      color: var(--background-color);
       font-size: 2rem;
       margin-top: 30px;
+      cursor: pointer;
     }
   }
   .contents {

@@ -3,7 +3,7 @@ title: First post
 description: The first post is the most memorable one.
 updatedAt: 2020-04-16
 date: "2020-04-16"
-category: Next.js
+category: nextjs
 published: true
 tags: ["apple", "samsung"]
 ---

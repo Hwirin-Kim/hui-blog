@@ -36,14 +36,32 @@ const Layout = ({ children }) => {
             }
           />
         </div>
-        <div className={classes.hamburger}>hamburger</div>
+        <div className={classes.top_menu}>
+          <div
+            className={classes.posts}
+            onClick={() => onClickToPage("/posts/allcategory")}
+          >
+            Posts
+          </div>
+          <div
+            className={classes.about}
+            onClick={() => onClickToPage("/about")}
+          >
+            About
+          </div>
+        </div>
         <div
           className={classes.category}
-          onClick={() => onClickToPage("posts")}
+          onClick={() => onClickToPage("/posts/allcategory")}
         >
           Posts
         </div>
-        <div className={classes.category}>About</div>
+        <div
+          className={classes.category}
+          onClick={() => onClickToPage("/about")}
+        >
+          About
+        </div>
       </div>
       <div className={classes.contents}>{children}</div>
     </div>

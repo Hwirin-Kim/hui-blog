@@ -13,18 +13,22 @@ const PostCard = ({ postInfo }) => {
   return (
     <hgroup
       className={classes.container}
-      onClick={() => onClickToPage(`/posts/${slug}`)}
+      onClick={() => onClickToPage(`/posts/post/${slug}`)}
     >
       <h1>{title}</h1>
-      <p>{date}</p>
       <em>{description}</em>
-      {tags ? (
-        tags.map((tag) => {
-          return <li key={tag}>{tag}</li>;
-        })
-      ) : (
-        <li>none</li>
-      )}
+      <p>{date}</p>
+
+      <div className={classes.tags}>
+        <p className={classes.keyword}>Keyword</p>
+        {tags ? (
+          tags.map((tag) => {
+            return <div key={tag}>{tag}</div>;
+          })
+        ) : (
+          <div>none</div>
+        )}
+      </div>
     </hgroup>
   );
 };

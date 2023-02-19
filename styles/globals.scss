@@ -1,0 +1,20 @@
+@import "./reset.scss";
+// Light mode
+:root {
+  --background-color: #ddc6b6;
+  --text-color: #262223;
+  font-size: 16px;
+}
+
+// Dark mode
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #262223;
+    --text-color: #ddc6b6;
+  }
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
