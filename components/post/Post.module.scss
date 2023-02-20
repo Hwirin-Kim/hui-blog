@@ -56,8 +56,11 @@
     }
   }
   img {
+    display: block;
+    margin: 0 auto;
     max-width: 70%;
     max-height: 500px;
+    object-fit: scale-down;
   }
 }
 
@@ -120,7 +123,7 @@
     img {
       display: block;
       margin: 0 auto;
-      max-width: 80%;
+      max-width: 90%;
       max-height: 500px;
       object-fit: scale-down;
     }

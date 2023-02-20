@@ -3,6 +3,7 @@ title: Second post
 description: hi
 updatedAt: 2020-04-16
 date: "2020-04-16"
+tags: ["apple", "samsung", "jazz", "hihi"]
 ---
 
 # h1의 내용이 들어가있음
