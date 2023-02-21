@@ -42,6 +42,15 @@
   h3 {
     font-size: 1.5rem;
   }
+  a:link {
+    text-decoration: none;
+    color: var(--text-color);
+    text-decoration-line: underline;
+  }
+  a:visited {
+    text-decoration: none;
+    color: var(--text-color);
+  }
   p {
     font-size: 1.2rem;
     line-height: 1.5;
