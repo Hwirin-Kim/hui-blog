@@ -1,0 +1,9 @@
+.p {
+  display: inline;
+  font-size: 3rem;
+}
+@media (max-width: 768px) {
+  .p {
+    font-size: 1.8rem;
+  }
+}
