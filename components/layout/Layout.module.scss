@@ -4,6 +4,7 @@
     height: 3rem;
     background-color: var(--text-color);
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
@@ -35,6 +36,9 @@
     display: flex;
     justify-content: center;
     // align-items: center;
+  }
+  .copyright {
+    display: none;
   }
 }
 
@@ -89,6 +93,9 @@
       margin-bottom: 10px;
       font-size: 1.2rem;
       color: var(--background-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
   .contents {
