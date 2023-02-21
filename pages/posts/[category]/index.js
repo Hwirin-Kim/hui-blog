@@ -1,6 +1,7 @@
 import PostList from "@/components/postList/PostList.jsx";
 import { getAllPosts } from "@/lib/api";
 import Head from "next/head";
+import SelectCategory from "@/components/postList/SelectCategory";
 
 const Category = ({ filteredPosts }) => {
   return (
@@ -10,7 +11,9 @@ const Category = ({ filteredPosts }) => {
         <meta name="description" content="Hui-blog" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <PostList posts={filteredPosts} />
+      <PostList posts={filteredPosts}>
+        <SelectCategory />
+      </PostList>
     </>
   );
 };
