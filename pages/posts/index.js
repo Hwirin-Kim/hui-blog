@@ -1,10 +1,8 @@
-import PostCard from "@/components/postCard/PostCard";
-import PostList from "@/components/postList/PostList";
+import PostList from "@/components/postList/PostList.jsx";
 import { getAllPosts } from "@/lib/api";
 import Head from "next/head";
 
 const Home = ({ posts }) => {
-  console.log(posts);
   return (
     <div>
       <Head>
@@ -27,7 +25,7 @@ export async function getStaticProps() {
     "tags",
     "category",
   ]);
-  console.log("포스츠에요", posts);
+
   return {
     props: {
       posts,

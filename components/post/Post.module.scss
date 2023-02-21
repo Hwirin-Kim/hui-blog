@@ -4,6 +4,7 @@
   height: fit-content;
   box-sizing: border-box;
   margin: 20px 20px 0 20px;
+  word-wrap: break-word;
 }
 .title {
   font-size: 3rem;
@@ -41,6 +42,15 @@
   h3 {
     font-size: 1.5rem;
   }
+  a:link {
+    text-decoration: none;
+    color: var(--text-color);
+    text-decoration-line: underline;
+  }
+  a:visited {
+    text-decoration: none;
+    color: var(--text-color);
+  }
   p {
     font-size: 1.2rem;
     line-height: 1.5;
@@ -55,7 +65,76 @@
     }
   }
   img {
+    display: block;
+    margin: 0 auto;
     max-width: 70%;
     max-height: 500px;
+    object-fit: scale-down;
+  }
+}
+
+@media (max-width: 780px) {
+  .container {
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0 10px;
+    word-wrap: break-word;
+  }
+  .title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .description {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  .date {
+    font-size: 1rem;
+  }
+  .line {
+    margin: 20px 0;
+  }
+  .content_wrap {
+    flex-direction: column;
+  }
+  .content {
+    width: 100%;
+
+    h1 {
+      color: yellow;
+      margin: 20px 0;
+      font-size: 1.8rem;
+    }
+    h2 {
+      margin: 30px 0;
+      font-size: 1.6rem;
+    }
+    h3 {
+      font-size: 1.4rem;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+    ul {
+      list-style-position: inside;
+    }
+    li {
+      text-indent: 10px;
+      p {
+        display: inline;
+      }
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 90%;
+      max-height: 500px;
+      object-fit: scale-down;
+    }
   }
 }

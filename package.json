@@ -2,6 +2,7 @@
   "name": "my-blog",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://Hwirin-Kim.github.io/hui-blog",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -18,6 +19,7 @@
     "prismjs": "^1.29.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-github-calendar": "^3.4.0",
     "react-icons": "^4.7.1",
     "rehype": "^12.0.1",
     "rehype-format": "^4.0.1",

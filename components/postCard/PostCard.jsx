@@ -1,11 +1,8 @@
-import { onClickToPage } from "@/lib/api";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import classes from "./PostCard.module.scss";
 const PostCard = ({ postInfo }) => {
   const { slug, description, title, date, tags } = postInfo;
   const router = useRouter();
-  console.log(tags);
   const onClickToPage = (page) => {
     router.push(`/${page}`);
   };
