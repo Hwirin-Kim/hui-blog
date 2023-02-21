@@ -62,7 +62,10 @@ const Layout = ({ children }) => {
         >
           About
         </div>
-        <div className={classes.copyright}>Copyright 2023 by Hwirin</div>
+        <div className={classes.copyright}>
+          <p>Copyright 2023 by Hwirin</p>
+          <p>All rights reserved.</p>
+        </div>
       </div>
       <div className={classes.contents}>{children}</div>
     </div>

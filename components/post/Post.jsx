@@ -3,6 +3,7 @@ import classes from "./Post.module.scss";
 import Head from "next/head";
 import { useEffect } from "react";
 import Prism from "prismjs";
+import Comments from "../comment/Comments.js";
 
 const Post = ({ post }) => {
   useEffect(() => {
@@ -25,9 +26,10 @@ const Post = ({ post }) => {
           className={classes.content}
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
-
         <Toc />
       </div>
+      <div className={classes.underline}></div>
+      <Comments />
     </div>
   );
 };
