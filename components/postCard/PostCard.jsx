@@ -14,10 +14,11 @@ const PostCard = ({ postInfo }) => {
     >
       <h1>{title}</h1>
       <em>{description}</em>
-      <p>{date}</p>
-
-      <div className={classes.tags}>
+      <div className={classes.tagDateWrap}>
         <p className={classes.keyword}>Tags</p>
+        <p>{date}</p>
+      </div>
+      <div className={classes.tags}>
         {tags ? (
           tags.map((tag) => {
             return <div key={tag}>{tag}</div>;
