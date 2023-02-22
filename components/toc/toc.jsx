@@ -26,7 +26,7 @@ const Toc = () => {
           return (
             <div key={`${element + index}`}>
               <a href={`#${element.id}`} className={classes.h1}>
-                {element.textContent}
+                • {element.textContent}
               </a>
             </div>
           );

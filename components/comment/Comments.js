@@ -13,7 +13,6 @@ const Comments = () => {
     scriptEl.setAttribute("theme", "github-dark");
     scriptEl.setAttribute("label", "💬 Discussion");
     commentsRef.current?.appendChild(scriptEl);
-    console.log("두번반복?");
   }, []);
 
   return <section ref={commentsRef} />;
