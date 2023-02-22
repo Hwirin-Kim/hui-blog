@@ -1,7 +1,6 @@
 import classes from "./Layout.module.scss";
 import img from "../../public/img/profile.webp";
 import {
-  AiOutlineBars,
   AiOutlineInstagram,
   AiOutlineGithub,
   AiOutlineMail,
