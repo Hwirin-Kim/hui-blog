@@ -4,7 +4,7 @@ const PostCard = ({ postInfo }) => {
   const { slug, description, title, date, tags } = postInfo;
   const router = useRouter();
   const onClickToPage = (page) => {
-    router.push(`/${page}`);
+    router.push(`${page}`);
   };
 
   return (
@@ -17,7 +17,7 @@ const PostCard = ({ postInfo }) => {
       <p>{date}</p>
 
       <div className={classes.tags}>
-        <p className={classes.keyword}>Keyword</p>
+        <p className={classes.keyword}>Tags</p>
         {tags ? (
           tags.map((tag) => {
             return <div key={tag}>{tag}</div>;

@@ -12,13 +12,13 @@ import { useRouter } from "next/router";
 const Layout = ({ children }) => {
   const router = useRouter();
   const onClickToPage = (page) => {
-    router.push(`/${page}`);
+    router.push(`${page}`);
   };
   return (
     <div className={classes.layout}>
       <div className={classes.nav}>
         <Image className={classes.profile} src={img} alt="profile_picture" />
-        <div className={classes.home} onClick={() => onClickToPage("")}>
+        <div className={classes.home} onClick={() => onClickToPage("/")}>
           김휘린의 블로그
         </div>
         <div className={classes.icons}>
@@ -49,6 +49,9 @@ const Layout = ({ children }) => {
           >
             About
           </div>
+        </div>
+        <div className={classes.category} onClick={() => onClickToPage("/")}>
+          Main
         </div>
         <div
           className={classes.category}

@@ -10,7 +10,7 @@ const Main = ({ res, weather, tagArry }) => {
   const day = today.getDate();
   const year = today.getFullYear();
   const onClickToPage = (page) => {
-    router.push(`/${page}`);
+    router.push(`${page}`);
   };
 
   return (
