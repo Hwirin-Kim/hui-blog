@@ -1,38 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# hui-blog
 
-## Getting Started
+## next.js 로 만든 블로그입니다.
 
-First, run the development server:
+### 제작 동기
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- hello world를 처음 찍어본지 5개월차인 저 스스로가 이제는 과연 간단한 블로그를 만들 실력은 될까? 라는 의문을 가지고 시작하였습니다.
+- 지킬이나 개츠비등에 이미 좋은 기능과 예쁜 디자인을 가진 템플릿이 많지만, 스스로 제작한 만큼, 시작은 미비하더라도 제 실력이 좋아지면서 블로그도 점차 발전시킬 생각입니다.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 기술스택
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1. Next.js (SEO에 유리하여 블로그에 적합하다고 생각하여 채택)
+2. SCSS (CSS의 모듈화로 고유한 클래스명 생성 및 편리한 관리와 중첩구문으로 편리하게 CSS작성)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+---
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 블로그 설명
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 기능 1. 카테고리 별 포스트
 
-## Learn More
+<img width="200" alt="스크린샷 2023-02-23 오후 1 30 59" src="https://user-images.githubusercontent.com/113874038/220821774-166f4c74-63a3-4daa-8ffd-9dcafbbcccb8.png"></br>
+해당 navbar의 posts를 눌러서 들어오면 Category별로 글을 볼 수 있습니다!
+</br>
+</br>
 
-To learn more about Next.js, take a look at the following resources:
+### 기능 2. Tag 별 포스트
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<img width="700" alt="스크린샷 2023-02-23 오후 1 33 27" src="https://user-images.githubusercontent.com/113874038/220821994-aa3178a5-cfbc-43cc-acb2-fc798e64892d.png">
+navbar의 main을 누르면 하단에 위와같은 태그들을 볼 수 있습니다. 해당하는 태그를 누르면 하단의 이미지 처럼 태그가 달려있는 글들을 볼 수 있습니다.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<img width="700" alt="스크린샷 2023-02-23 오후 1 36 01" src="https://user-images.githubusercontent.com/113874038/220822251-402f82dc-d801-4e3c-ba87-a29727f10cec.png">
 
-## Deploy on Vercel
+### 기타 설명
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. navbar의 about에서 저의 간단한 이력을 적어두었습니다.
+2. Main페이지의 날짜 아래의 영어 문장은 오늘 날짜에 관한 정보입니다.
+3. Main페이지의 날씨는 OpenWeather의 Open API입니다.
+4. navbar의 인스타, 깃허브, 이메일 아이콘을 눌러서 해당 위치로 이동할 수 있습니다.
+5. 게시된 포스트 하단에 댓글기능이 있으며, 깃허브 아이디가 있어야 댓글을 남길 수 있습니다.
+6. 블로그 제작 중 발생한 트러블슈팅은 블로그 메인에서 Tag의 blog만들기를 통해 볼 수 있습니다. (꾸준히 업데이트 중입니다!)
