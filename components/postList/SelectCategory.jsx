@@ -1,22 +1,40 @@
+import { MyContext } from "@/lib/CategoryContext";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import classes from "./SelectCategory.module.scss";
 
-const SelectCategory = () => {
+const SelectCategory = ({ params }) => {
   const router = useRouter();
-  const [category, setCategory] = useState("All Category");
+  const { category, setCategory, value, setValue } = useContext(MyContext);
+
   const onSelectChange = (event) => {
     //선택된 option의 text를 가져와서 사용
+
     const selectElement = document.getElementById("mySelect");
     const selectedOptionText =
       selectElement.options[selectElement.selectedIndex].text;
     setCategory(selectedOptionText);
+    setValue(event.target.value);
     router.push(`/posts/${event.target.value}`);
   };
+  useEffect(() => {
+    if (params.category !== value) {
+      setValue(params.category);
+      setCategory("All Category");
+    }
+  }, [params.category]);
+
   return (
     <>
-      <select id={"mySelect"} onChange={onSelectChange}>
-        <option disabled>카테고리</option>
+      <select
+        id={"mySelect"}
+        className={classes.select}
+        onChange={onSelectChange}
+        defaultValue={"default"}
+      >
+        <option value={"default"} disabled>
+          카테고리
+        </option>
         <option value={"allcategory"} name={"All Category"}>
           All Category
         </option>

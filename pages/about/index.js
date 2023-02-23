@@ -18,9 +18,32 @@ const About = () => {
       <br />
       <br />
       <h1 className={classes.section_title}>프로젝트 경험</h1>
+
       <div className={classes.project}>
         <div className={classes.project_title}>
-          <h2>1. 일탈 (일상의 방탈출)</h2>
+          <h2>hui-blog (개인 블로그)</h2>
+          <h3>2023.02~ing</h3>
+        </div>
+        <div className={classes.desc}>
+          <p>Description</p>
+          <p>개발공부, 트러블 슈팅, TIL등 경험 공유 목적의 간단한 블로그</p>
+          <p>Tech Stack</p>
+          <p>Next.js / SCSS </p>
+          <p>Github</p>
+          <a href="https://github.com/Hwirin-Kim/hui-blog">
+            https://github.com/Hwirin-Kim/hui-blog
+          </a>
+          <p>link</p>
+          <a href="https://hui-blog.co.kr/">https://hui-blog.co.kr/</a>
+        </div>
+        <ul className={classes.list}>
+          <li>공통 컴포넌트를 만들어서 코드를 간소화</li>
+        </ul>
+      </div>
+
+      <div className={classes.project}>
+        <div className={classes.project_title}>
+          <h2>일탈 (일상의 방탈출)</h2>
           <h3>2022.11~2022.12</h3>
         </div>
         <div className={classes.desc}>

@@ -2,7 +2,7 @@
 title: gray-matter 사용하기
 description: 마크다운파일을 html로 읽기
 date: "2023-02-16"
-category: TIL
+category: til
 published: true
 tags: ["gray-matter", "blog만들기", "Next.js"]
 ---
