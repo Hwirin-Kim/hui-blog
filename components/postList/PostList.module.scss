@@ -17,15 +17,6 @@
   grid-template-columns: repeat(2, minmax(auto, 600px));
   gap: 20px;
 }
-.container select {
-  width: 200px;
-  height: 40px;
-  font-size: 1rem;
-  border-radius: 8px;
-  margin-bottom: 30px;
-
-  background-color: var(--text-color);
-}
 
 @media (max-width: 768px) {
   .wrap {

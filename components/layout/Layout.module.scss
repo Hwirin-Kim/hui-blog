@@ -2,20 +2,21 @@
   .nav {
     width: 100%;
     height: 3rem;
-    background-color: var(--text-color);
+    background-color: var(--navback-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+    color: var(--navtext-color);
     padding: 0 5px;
     .home {
+      color: var(--navtext-color);
       font-size: 1.5rem;
-      color: var(--background-color);
     }
     .top_menu {
       display: flex;
-      color: var(--background-color);
+      color: var(--navtext-color);
       div {
         font-size: 1.5rem;
         margin-left: 10px;
@@ -50,7 +51,7 @@
   .nav {
     width: 18rem;
     height: calc(var(--vh, 1vh) * 100 - 40px);
-    background-color: var(--text-color);
+    background-color: var(--navback-color);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -59,9 +60,9 @@
     box-sizing: border-box;
     align-items: center;
     padding: 0 10px;
-    color: var(--text-color);
+    color: var(--navtext-color);
     .home {
-      color: var(--background-color);
+      color: var(--navtext-color);
       font-size: 30px;
       margin: 20px 0;
     }
@@ -76,14 +77,14 @@
       margin: 20px 0;
     }
     .icons {
-      color: var(--background-color);
+      color: var(--navtext-color);
       font-size: 2rem;
       width: 150px;
       display: flex;
       justify-content: space-between;
     }
     .category {
-      color: var(--background-color);
+      color: var(--navtext-color);
       font-size: 2rem;
       margin-top: 30px;
       cursor: pointer;
@@ -91,8 +92,8 @@
     .copyright {
       margin-top: auto;
       margin-bottom: 10px;
-      font-size: 1.2rem;
-      color: var(--background-color);
+      font-size: 1rem;
+      color: var(--navtext-color);
       display: flex;
       flex-direction: column;
       align-items: center;

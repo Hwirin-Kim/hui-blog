@@ -2,9 +2,9 @@
   width: 100%;
   min-width: 400px;
   height: 175px;
-  background-color: var(--text-color);
+  background-color: var(--postcard-color);
   margin: 1px;
-  color: var(--background-color);
+  color: var(--text-color);
   border-radius: 24px;
   box-sizing: border-box;
   padding: 10px;
@@ -13,13 +13,14 @@
   justify-content: center;
 
   h1 {
-    font-size: 2rem;
-    margin-bottom: 5px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
   }
 
   em {
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 10px;
   }
   p {
     margin-top: 5px;
@@ -41,7 +42,7 @@
 
   div {
     border-radius: 10px;
-    border: 1px solid var(--background-color);
+    border: 1px solid var(--text-color);
     display: inline;
     padding: 3px 5px;
     margin-right: 10px;
@@ -93,7 +94,7 @@
     }
     .tags {
       display: flex;
-      width: 300px;
+      width: 100%;
       flex-wrap: wrap;
       margin: 10px 0;
     }
