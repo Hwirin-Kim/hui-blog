@@ -3,7 +3,7 @@ import { getAllPosts } from "@/lib/api";
 import Head from "next/head";
 import SelectCategory from "@/components/postList/SelectCategory";
 
-const Category = ({ filteredPosts }) => {
+const Category = ({ filteredPosts, params }) => {
   return (
     <>
       <Head>
@@ -12,7 +12,7 @@ const Category = ({ filteredPosts }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <PostList posts={filteredPosts}>
-        <SelectCategory />
+        <SelectCategory params={params} />
       </PostList>
     </>
   );
@@ -43,6 +43,7 @@ export async function getStaticProps(context) {
   return {
     props: {
       filteredPosts,
+      params,
     },
   };
 }

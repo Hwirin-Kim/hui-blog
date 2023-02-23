@@ -3,10 +3,15 @@
   width: 100%;
   height: fit-content;
   box-sizing: border-box;
-  margin: 20px 20px 0 20px;
+  margin-top: 20px;
+  padding: 0 10px;
   word-wrap: break-word;
+  color: var(--text-color);
 }
 .title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   font-size: 3rem;
 }
 .description {
@@ -15,8 +20,10 @@
   font-style: italic;
 }
 .date {
+  display: flex;
+  justify-content: flex-end;
   margin-top: 10px;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 .line {
   border-top: 1px solid var(--text-color);
@@ -30,23 +37,24 @@
   flex-direction: row;
 }
 .underline {
-  border-bottom: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--navback-color);
   margin: 40px 0;
 }
 .content {
   width: 100%;
 
   h1 {
-    color: yellow;
+    color: var(--posth1-color);
     margin: 20px 0;
     font-size: 2.2rem;
-    text-decoration-line: underline;
   }
   h2 {
+    color: var(--posth2-color);
     margin: 30px 0;
     font-size: 1.8rem;
   }
   h3 {
+    color: var(--posth3-color);
     font-size: 1.5rem;
   }
   a:link {
@@ -59,6 +67,7 @@
     color: var(--text-color);
   }
   p {
+    color: var(--text-color);
     font-size: 1.2rem;
     line-height: 1.5;
     margin: 20px 0;

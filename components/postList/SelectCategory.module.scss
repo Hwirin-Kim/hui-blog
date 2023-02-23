@@ -2,3 +2,13 @@
   font-size: 2rem;
   margin-bottom: 20px;
 }
+.select {
+  width: 200px;
+  height: 40px;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  color: var(--selecttext-color);
+  background-color: var(--select-color);
+  text-align: center;
+}
