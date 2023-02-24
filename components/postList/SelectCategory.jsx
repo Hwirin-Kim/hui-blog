@@ -62,6 +62,9 @@ const SelectCategory = ({ params }) => {
         <option value={"computerscience"} name={"Computer Science"}>
           ComputerScience
         </option>
+        <option value={"잡담"} name={"잡담"}>
+          잡담
+        </option>
       </select>
       <p className={classes.category}>{category}</p>
     </>

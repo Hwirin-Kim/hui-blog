@@ -59,6 +59,7 @@ export async function getStaticPaths() {
     "network",
     "algorithm",
     "computerscience",
+    "잡담",
   ];
   const paths = categories.map((category) => ({
     params: {
