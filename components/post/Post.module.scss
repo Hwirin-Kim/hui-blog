@@ -99,6 +99,9 @@
     text-decoration-line: underline;
     text-decoration-color: var(--postemunder-color);
   }
+  pre {
+    width: 730px;
+  }
 }
 
 @media (max-width: 780px) {
