@@ -32,9 +32,9 @@
 .content_wrap {
   width: 100%;
   height: auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 300px;
   column-gap: 0;
-  flex-direction: row;
 }
 .underline {
   border-bottom: 1px solid var(--navback-color);
@@ -100,7 +100,15 @@
     text-decoration-color: var(--postemunder-color);
   }
   pre {
-    width: 730px;
+    code {
+      overflow: auto;
+    }
+  }
+}
+@media (max-width: 1180px) {
+  .content_wrap {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -130,13 +138,13 @@
     margin: 20px 0;
   }
   .content_wrap {
+    display: flex;
     flex-direction: column;
   }
   .content {
     width: 100%;
 
     h1 {
-      color: yellow;
       margin: 20px 0;
       font-size: 1.8rem;
     }
