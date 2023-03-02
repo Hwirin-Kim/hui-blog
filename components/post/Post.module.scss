@@ -100,6 +100,7 @@
     text-decoration-color: var(--postemunder-color);
   }
   pre {
+    max-width: 800px;
     code {
       overflow: auto;
     }
