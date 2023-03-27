@@ -126,3 +126,38 @@ SOAP API에서는 데이터 전송을 위해 XML을 사용하며, XML내에서 S
 </br>
 
 이 경우에는 URI의 디자인이 일관성이 없어서 URI를 파싱하고 사용자 요청을 이해하고, 처리하는데 어려움이 있을 수 있다. 또한 HTTP메소드가 명확하지 않아서 서버가 예기치 않은 동작을 수행할 수도 있다. 이러한 이유로 RESTful 아키텍처를 따르는 것이 좋다.
+
+---
+
+## GET과 POST의 차이점
+
+### GET
+
+GET은 데이터를 읽거나 검색할 때에 사용되는 메소드라고 할 수 있다. </br>
+
+GET은 요청을 전송할 때, URL 주소 끝에 파라미터로 포함되어 전송되며, 이 부분을 쿼리스트링 이라고 부른다. </br>
+
+```javascript
+https://movie.naver.com/movie/bi/mi/basic.naver?code=215932
+// 여기서 맨 끝 부분의 코드가 쿼리스트링으로 GET요청을 한 경우이다.
+```
+
+GET 요청은 오로지 데이터를 읽을 때만 사용되고 수정할 때는 사용되지 않는다.
+
+### POST
+
+POST는 전송해야할 데이터를 HTTP메시지의 Body에 담아서 전송한다. </br>
+
+그리고 Body의 타입은 요청헤더의 `Content-Type` 에 요청 데이터의 표시하여 결정된다.</br>
+
+HTTP메시지의 Body는 길이의 제한 없이 데이터를 전송할 수 있다. 그래서 POST는 GET과 달리 대용량 데이터를 전송할 수 있는 이유가 여기에 있다.</br>
+
+POST요청은 크롬의 개발자도구나 Fiddler와 같은 툴로 요청 내용을 확인할 수 있기 때문에 민감한 데이터의 경우에는 반드시 암호화 하여 전송해야 한다.
+
+### GET POST 차이
+
+![get,post차이](https://images.velog.io/images/songyouhyun/post/0dea38bf-bdb3-4562-a5f0-c510f843f48f/image.png)
+
+이미지 출처 : https://velog.io/@songyouhyun </br>
+
+위 사진은 GET과 POST의 리소스 전달 방식의 차이를 표현한 것이다.
