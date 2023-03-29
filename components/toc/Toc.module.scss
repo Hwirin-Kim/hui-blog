@@ -1,12 +1,14 @@
 .container {
   width: 300px;
   display: inline-block;
-  height: 1px;
+  height: fit-content;
   max-height: auto;
   position: sticky;
   top: 0;
   line-height: 1.8rem;
   color: var(--text-color);
+  flex-shrink: 0;
+  padding-left: 10px;
 
   span {
     font-size: 1.5rem;
