@@ -15,7 +15,7 @@ const SelectCategory = ({ params }) => {
       selectElement.options[selectElement.selectedIndex].text;
     setCategory(selectedOptionText);
     setValue(event.target.value);
-    router.push(`/posts/${event.target.value}`);
+    router.push(`/posts/category/${event.target.value}`);
   };
   useEffect(() => {
     if (params.category !== value) {

@@ -4,7 +4,7 @@ description: Javascript의 promise
 date: "2023-01-04"
 category: javascript
 published: true
-tags: ["Javascript", "Promise"]
+tags: ["Promise"]
 ---
 
 # Promise란?

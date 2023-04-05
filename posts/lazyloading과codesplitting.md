@@ -4,7 +4,7 @@ description: 리액트 성능개선
 date: "2023-01-12"
 category: react
 published: true
-tags: ["React", "lazy-loading", "code-splitting", "trouble-shooting"]
+tags: ["lazy-loading", "code-splitting", "trouble-shooting"]
 ---
 
 # Lazy loading

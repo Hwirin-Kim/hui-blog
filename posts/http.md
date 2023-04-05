@@ -4,7 +4,7 @@ description: http와 메세지 구조
 date: "2023-03-30"
 category: network
 published: true
-tags: ["network", "http"]
+tags: ["http"]
 ---
 
 # HTTP

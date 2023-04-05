@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
         <div className={classes.top_menu}>
           <div
             className={classes.posts}
-            onClick={() => onClickToPage("/posts/allcategory")}
+            onClick={() => onClickToPage("/posts/category/allcategory")}
           >
             Posts
           </div>
@@ -54,7 +54,7 @@ const Layout = ({ children }) => {
         </div>
         <div
           className={classes.category}
-          onClick={() => onClickToPage("/posts/allcategory")}
+          onClick={() => onClickToPage("/posts/category/allcategory")}
         >
           Posts
         </div>
