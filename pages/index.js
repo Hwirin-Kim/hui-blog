@@ -12,7 +12,7 @@ const Home = ({ res, weather, tagArry }) => {
 
 export default Home;
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await getTodayFact();
   const weather = await getWeather();
   const tagArry = await getAllTags();

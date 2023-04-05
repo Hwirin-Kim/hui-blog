@@ -4,7 +4,7 @@ description: staleTime과 cacheTime의 차이
 date: "2023-03-20"
 category: react
 published: true
-tags: ["react", "til", "react-query"]
+tags: ["react-query"]
 ---
 
 ## React-Query 의 도입

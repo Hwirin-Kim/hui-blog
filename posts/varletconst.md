@@ -4,7 +4,7 @@ description: 변수 선언 방식의 차이
 date: "2023-01-05"
 category: javascript
 published: true
-tags: ["Javascript", "var", "let", "const"]
+tags: ["var", "let", "const"]
 ---
 
 ## 변수 선언방식

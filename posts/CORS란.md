@@ -4,7 +4,7 @@ description: CORS란? 그리고 해결방법은 무엇인가?
 date: "2023-01-09"
 category: network
 published: true
-tags: ["Network", "CORS"]
+tags: ["CORS"]
 ---
 
 # CORS 란?

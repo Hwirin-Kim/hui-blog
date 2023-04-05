@@ -4,7 +4,7 @@ description: get, post 등 메소드와 그 기준
 date: "2023-03-27"
 category: network
 published: true
-tags: ["network", "RestfulAPI"]
+tags: ["RestfulAPI"]
 ---
 
 # REST API가 무엇일까?

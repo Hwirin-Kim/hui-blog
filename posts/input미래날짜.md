@@ -4,7 +4,7 @@ description: 미래 날짜가 선택되지 않게!
 date: "2022-12-14"
 category: javascript
 published: true
-tags: ["Javascript", "input", "trouble-shooting"]
+tags: ["input", "trouble-shooting"]
 ---
 
 # 미래 날짜가 선택되는 문제!
