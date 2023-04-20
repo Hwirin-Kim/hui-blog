@@ -9,6 +9,10 @@ const Home = ({ res, weather, tagArry }) => {
       <Head>
         <title>휘블로그</title>
         <meta
+          name="google-site-verification"
+          content="U4QhBYYRBpO4VfRmqeEicVviKk7hySQClVxchjD-cVo"
+        />
+        <meta
           name="description"
           content="주니어 프론트엔드 개발자 휘의 개인 블로그입니다. 공부한 내용을 기록하고 공유하는 목적으로 개설하였습니다."
         />
